@@ -1,0 +1,84 @@
+body{
+    background-image: linear-gradient(to top right,blue,white,red);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.circle.-first{
+    background-color: #c1022d;
+    z-index: 1;
+    width: 550px;
+    height: 550px;
+    box-shadow: 0px 0px 1rem black;
+}
+
+.circle.-second{
+    background-color: #f5f5f5;
+    z-index: 2;
+    width: 430px;
+    height: 430px;
+}
+
+.circle.-third{
+    background-color: #c1022d;
+    z-index: 3;
+    width: 310px;
+    height: 310px;
+}
+
+.circle.-fourth{
+    background-color: #014cc1;
+    z-index: 4;
+    width: 190px;
+    height: 190px;
+}
+
+.circle.-middle{
+    background-color: #f5f5f5;
+    z-index: 5;
+    width: 70px;
+    height: 70px;
+}
+
+.triangle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    z-index: 6;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 70px solid #f5f5f5;
+}
+
+.triangle.-up{
+    transform: translate(-50%,-95px);
+}
+
+.triangle.-left{
+    transform: translate(-84px,-50px) rotate(-70deg);
+}
+
+.triangle.-right{
+    transform: translate(34px,-50px) rotate(70deg);
+}
+
+.triangle.-bottom-left{
+    transform: translate(-59px,15px) rotate(-145deg);
+}
+
+.triangle.-bottom-right{
+    transform: translate(9px,15px) rotate(145deg);
+}
+
