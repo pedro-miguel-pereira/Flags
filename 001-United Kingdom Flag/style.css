@@ -1,5 +1,8 @@
 body{
-    background-color: #634228;
+    background-image: linear-gradient(to top,#012169,white,#c8102e);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .flag {
@@ -11,31 +14,31 @@ body{
     background-color: #fff;
 }
 
-.frame-h{
+.frame{
     position: absolute;
-    background-color: #634228;
+    background-color: #424242;
+    z-index: 100;
+}
+
+.frame.-h{
     width: 650px;
     height: 26px;
-    z-index: 100;
 }
 
-.frame-v {
-    position: absolute;
-    background-color: #634228;
+.frame.-v {
     width: 26px;
     height: 450px;
-    z-index: 100;
 }
 
-.frame-h.-top, .frame-v.-left{
+.frame.-top, .frame.-left{
     transform: translate(-25px,-25px);
 }
 
-.frame-h.-bottom{
+.frame.-bottom{
     transform: translate(-25px,0px);
 }
 
-.frame-v.-right{
+.frame.-right{
     transform: translate(600px,-25px);
 }
 
@@ -75,31 +78,31 @@ body{
     margin-top: 20px;
 }
 
-.white-line-v{
+.white-line{
     background-color: white;
     position: absolute;
-    width: 20px;
-    height: 140px;
     z-index: 10;
 }
 
-.white-line-v.-left{
+.white-line.-v{
+    width: 20px;
+    height: 140px;
+}
+
+.white-line.-h{
+    width: 260px;
+    height: 20px;
+}
+
+.white-line.-left{
     transform: translate(240px,-140px);
 }
 
-.white-line-v.-right{
+.white-line.-right{
     transform: translate(0px,-140px);
 }
 
-.white-line-h{
-    background-color: white;
-    position: absolute;
-    width: 260px;
-    height: 20px;
-    z-index: 10;
-}
-
-.white-line-h.-bottom{
+.white-line.-bottom{
     transform: translate(0px,-160px);
 }
 
@@ -138,7 +141,7 @@ body{
 }
 
 .main-red-line.-tdr{
-    transform: translate(-30px,60px) rotate(-35deg);
+    transform: translate(-26px,60px) rotate(-35deg);
 }
 
 .main-white-line.-bdl{
