@@ -1,0 +1,41 @@
+body{
+    background-color: #407264;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translate(-50%,0);
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+
+    border-bottom: 200px solid #64ab9c;
+    z-index: 1;
+}
+
+.triangle.-two{
+    border-bottom: 200px solid #e2c687;
+
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+
+.triangle.-three{
+    border-bottom: 200px solid #f8f0d0;
+
+    transform: translate(-50%,-100%);
+    z-index: 3;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 40px;
+    height: 100px;
+    transform: translate(-50%,0);
+    background-color: #8B4513;
+}
