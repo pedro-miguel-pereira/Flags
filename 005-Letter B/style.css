@@ -1,0 +1,47 @@
+body{
+    background-color: #6b92c9;
+}
+
+.circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+
+.circle.-big{
+    background-color: #263b7f;
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+}
+
+.circle.-small{
+    background-color: #6b92c9;
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+}
+
+.square{
+    background-color: #6b92c9;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%,-100%);
+}
+
+.squareB{
+    background-color: #263b7f;
+    position: absolute;
+    z-index: 3;
+    width: 100px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-200%,-100%);
+}
