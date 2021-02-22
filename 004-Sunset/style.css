@@ -1,0 +1,63 @@
+body{
+    background-color: #1f4740;
+}
+
+.circle{
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    left: 50%;
+}
+
+.wrap-outer{
+    position: relative;
+    top: 200px;
+    width: 400px;
+    height:190px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.circle.-big{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: #e8ac45;
+    z-index: 2;
+    top: 50%;
+}
+
+.circle.-small{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: #958437;
+    top: 300px;
+    z-index: 1;
+}
+
+.line{
+    position: absolute;
+    z-index: 10;
+    background-color: #1f4740;
+    width: 400px;
+    height: 30px;
+    top: 300px;
+    left: 50%;
+}
+
+.line.-first{
+    transform: translate(-50%,-120px);
+}
+
+.line.-second{
+    transform: translate(-50%,-47px);
+}
+
+.line.-third{
+    transform: translate(-50%,17px);
+}
+
+.line.-fourth{
+    transform: translate(-50%,90px);
+}
