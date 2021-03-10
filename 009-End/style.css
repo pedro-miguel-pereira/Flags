@@ -1,0 +1,143 @@
+body {
+	background-color: #272c34;
+}
+
+.word {
+	display: flex;
+	margin: auto;
+	width: fit-content;
+	height: fit-content;
+	margin-top: 200px;
+}
+
+.light {
+	position: absolute;
+	background-color: #1a1e24;
+	box-shadow: 0px 0px 6px 0px #1a1e24;
+	border-radius: 3px;
+}
+
+.ee,
+.nn,
+.dd {
+	position: relative;
+	width: 160px;
+	height: 300px;
+}
+.nn,
+.dd {
+	margin-left: 100px;
+}
+
+.ee .light.-left,
+.nn .light.-left,
+.dd .light.-left {
+	height: 300px;
+	width: 10px;
+}
+
+.ee .light.-top,
+.ee .light.-middle,
+.ee .light.-bottom {
+	height: 10px;
+	width: 150px;
+	left: 15px;
+}
+.ee .light.-middle {
+	top: 140px;
+	animation: flicker 7s ease-in-out 5.5s infinite alternate;
+}
+
+.ee .light.-bottom {
+	top: 290px;
+	animation: flicker 7s ease-in-out 2.3s infinite alternate;
+}
+
+.nn .light.-diagonal {
+	height: 330px;
+	width: 10px;
+	left: 15px;
+	transform-origin: top;
+	transform: rotate(-25deg);
+	animation: flicker 7s ease-in-out 4s infinite alternate;
+}
+
+.nn .light.-right {
+	height: 300px;
+	width: 10px;
+	left: 170px;
+	animation: flicker 7s ease-in-out 5.5s infinite alternate;
+}
+
+.dd .right {
+	position: relative;
+	width: 150px;
+	height: 300px;
+	left: 20px;
+	overflow: hidden;
+}
+
+.dd .right .circle {
+	position: absolute;
+	width: 300px;
+	height: 280px;
+	border-radius: 50%;
+	left: -125%;
+	border: 10px solid #1a1e24;
+	box-shadow: 0px 0px 6px 0px #1a1e24;
+	animation: flickerCircle 7s ease-in-out 2.3s infinite alternate;
+}
+
+.dd .light.-left {
+	animation: flicker 7s ease-in-out 1.5s infinite alternate;
+}
+
+.ee .light.-left {
+	animation: flicker 7s ease-in-out 6s infinite alternate;
+}
+
+.ee .light.-top {
+	animation: flicker 7s ease-in-out 2.8s infinite alternate;
+}
+
+.nn .light.-left {
+	animation: flicker 7s ease-in-out 3.7s infinite alternate;
+}
+
+@keyframes flicker {
+	40%,
+	42%,
+	44%,
+	46%,
+	100% {
+		background: #f1f4f5;
+		box-shadow: 0px 0px 10px 0px #f1f4f5;
+	}
+	0%,
+	39%,
+	41%,
+	43%,
+	45% {
+		background: #1a1e24;
+		box-shadow: 0px 0px 6px 0px #1a1e24;
+	}
+}
+
+@keyframes flickerCircle {
+	40%,
+	42%,
+	44%,
+	46%,
+	100% {
+		border: 10px solid #f1f4f5;
+		box-shadow: 0px 0px 10px 0px #f1f4f5;
+	}
+	0%,
+	39%,
+	41%,
+	43%,
+	45% {
+		border: 10px solid #1a1e24;
+		box-shadow: 0px 0px 6px 0px #1a1e24;
+	}
+}
