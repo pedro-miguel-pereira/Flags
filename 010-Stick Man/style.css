@@ -93,6 +93,6 @@ body{
         transform: translate(245px,-80px) rotate(20deg);
     }
     100%{
-        transform: translate(210px,-60px) rotate(-20deg);
+        transform: translate(205px,-60px) rotate(-20deg);
     }
 }
