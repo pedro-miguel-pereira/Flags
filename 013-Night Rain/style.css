@@ -1,0 +1,513 @@
+body {
+	background-color: #1a2238;
+	color: #394568;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-weight: 300;
+}
+
+.frame {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.front {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 150px;
+	background-color: #fff;
+	z-index: 4;
+}
+
+.front .temperature {
+	font-size: 100px;
+	float: left;
+	line-height: 150px;
+	margin-left: 80px;
+}
+
+.front .info,
+.front .date {
+	font-size: 40px;
+	float: left;
+	line-height: 50px;
+	margin: 30px 0 0 130px;
+}
+
+.front .date {
+	float: right;
+	margin: 30px 120px 0 0;
+}
+
+.front .date b {
+	font-size: 35px;
+	font-weight: 600;
+	float: right;
+	margin-left: 20px;
+}
+
+.moon {
+	position: absolute;
+	background-color: #f6edbd;
+	box-shadow: 0 0 30px 0 #f6edbd;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	top: 30px;
+	left: 100px;
+	overflow: hidden;
+	animation: appear 2s ease-out;
+}
+
+.moon .ball {
+	position: absolute;
+	background-color: #ece1a8;
+	border-radius: 50%;
+}
+
+.moon .ball.-small {
+	width: 8px;
+	height: 8px;
+}
+
+.moon .ball.-meddium-small {
+	width: 15px;
+	height: 15px;
+}
+
+.moon .ball.-meddium {
+	width: 20px;
+	height: 20px;
+}
+
+.moon .ball.-big {
+	width: 30px;
+	height: 30px;
+}
+
+.moon .ball.-b1 {
+	left: 40px;
+	top: 40px;
+}
+
+.moon .ball.-b2 {
+	right: 40px;
+	top: 100px;
+}
+
+.moon .ball.-b3 {
+	right: 80px;
+	top: 10px;
+}
+
+.moon .ball.-b4 {
+	right: 80px;
+	bottom: 10px;
+}
+
+.moon .ball.-b5 {
+	left: 10px;
+	bottom: 20px;
+}
+
+.moon .ball.-b6 {
+	right: 10px;
+	top: 20px;
+}
+
+.moon .ball.-b7 {
+	right: 80px;
+	top: 80px;
+	width: 25px;
+	height: 25px;
+}
+
+.moon .ball.-b8 {
+	right: 60px;
+	top: 50px;
+}
+
+.moon .ball.-b9 {
+	left: -15px;
+	top: 60px;
+	width: 40px;
+	height: 40px;
+}
+
+.moon .ball.-b10 {
+	right: 70px;
+	bottom: 40px;
+}
+
+.moon .ball.-b11 {
+	left: 50px;
+	bottom: 60px;
+}
+
+.moon .ball.-b12 {
+	right: 40px;
+	bottom: 30px;
+}
+
+.moon .ball.-b13 {
+	right: 20px;
+	top: 60px;
+}
+
+.moon .ball.-b14 {
+	right: 30px;
+	bottom: 90px;
+}
+
+.moon .ball.-b15 {
+	left: 30px;
+	bottom: 60px;
+}
+
+.hill-front {
+	position: absolute;
+	background-color: #303c5d;
+	border-radius: 50%;
+	width: 800px;
+	height: 300px;
+	bottom: 0;
+	left: -200px;
+	z-index: 2;
+}
+
+.hill-front.-second {
+	left: 400px;
+	bottom: 50px;
+}
+
+.hill-front.-third {
+	right: -300px;
+	left: unset;
+}
+
+.hill-bg {
+	position: absolute;
+	background-color: #26314f;
+	border-radius: 50%;
+	width: 850px;
+	height: 350px;
+	bottom: 100px;
+	left: -100px;
+	z-index: 1;
+}
+
+.hill-bg.-second {
+	left: unset;
+	right: -100px;
+}
+
+.drop {
+	position: absolute;
+	z-index: 3;
+	border-radius: 50%;
+	background: #7fc1f9;
+	transform-origin: 50% 100%;
+	bottom: 150px;
+}
+
+.drop.-big::before,
+.drop.-big::after,
+.drop.-medium::before,
+.drop.-medium::after,
+.drop.-small::before,
+.drop.-samll::after {
+	background: #7fc1f9;
+	display: block;
+	position: absolute;
+	content: "";
+}
+
+.drop.-big {
+	width: 14px;
+	height: 14px;
+	animation: drop 1s linear infinite both;
+}
+
+.drop.-big::before {
+	width: 10px;
+	height: 10px;
+	border-radius: 12px;
+	top: -2px;
+	left: 2px;
+}
+
+.drop.-big::after {
+	width: 8px;
+	height: 15px;
+	border-radius: 50%;
+	top: -5px;
+	left: 3px;
+}
+
+.drop.-medium {
+	width: 10px;
+	height: 10px;
+	opacity: 0.6;
+	animation: drop 1.5s linear infinite both;
+}
+
+.drop.-medium::before {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	top: -2px;
+	left: 1px;
+}
+
+.drop.-medium::after {
+	width: 6px;
+	height: 8px;
+	border-radius: 50%;
+	top: -3px;
+	left: 2px;
+}
+
+.drop.-small {
+	width: 6px;
+	height: 6px;
+	opacity: 0.3;
+	animation: drop 2s linear infinite both;
+}
+
+.drop.-small::before {
+	top: -2px;
+	left: 1px;
+	width: 4px;
+	height: 4px;
+}
+
+.drop.-small::after {
+	top: -4px;
+	left: 2px;
+	width: 2px;
+	height: 6px;
+}
+
+.drop.-p1 {
+	right: 95px;
+	animation-delay: 0.8s;
+}
+
+.drop.-p2 {
+	right: 660px;
+	animation-delay: 0.2s;
+}
+
+.drop.-p3 {
+	right: 770px;
+	animation-delay: 3s;
+}
+
+.drop.-p4 {
+	right: 240px;
+	animation-delay: 0.9s;
+}
+
+.drop.-p5 {
+	right: 380px;
+	animation-delay: 0.5s;
+}
+
+.drop.-p6 {
+	right: 450px;
+	animation-delay: 1.3s;
+}
+
+.drop.-p7 {
+	left: -30px;
+	animation-delay: 0.8s;
+}
+
+.drop.-p8 {
+	left: 80px;
+	animation-delay: 1s;
+}
+
+.drop.-p9 {
+	left: 120px;
+	animation-delay: 1.2s;
+}
+
+.drop.-p10 {
+	left: 190px;
+	animation-delay: 0.9s;
+}
+
+.drop.-p11 {
+	left: 380px;
+	animation-delay: 0.5s;
+}
+
+.drop.-p12 {
+	left: 450px;
+	animation-delay: 1.3s;
+}
+
+.drop.-p13 {
+	left: 530px;
+	animation-delay: 0.7s;
+}
+
+.drop.-p14 {
+	right: 550px;
+	animation-delay: 1.9s;
+}
+
+.drop.-p15 {
+	right: 750px;
+	animation-delay: 2.1s;
+}
+
+.drop.-p16 {
+	left: 670px;
+	animation-delay: 1.8s;
+}
+
+.drop.-p17 {
+	left: 90px;
+	animation-delay: 0.9s;
+}
+
+.drop.-p18 {
+	left: 150px;
+	animation-delay: 1.5s;
+}
+
+.drop.-p19 {
+	left: 390px;
+	animation-delay: 2.1s;
+}
+
+.drop.-p20 {
+	left: 550px;
+	animation-delay: 2s;
+}
+
+.drop.-p21 {
+	left: 600px;
+	animation-delay: 1.3s;
+}
+
+.drop.-p22 {
+	right: 140px;
+	animation-delay: 2.8s;
+}
+
+.drop.-p23 {
+	right: 230px;
+	animation-delay: 3.2s;
+}
+
+.drop.-p24 {
+	right: 300px;
+	animation-delay: 2.6s;
+}
+
+.drop.-p25 {
+	right: 525px;
+	animation-delay: 2.3s;
+}
+
+.drop.-p26 {
+	right: 165px;
+	animation-delay: 0.8s;
+}
+
+.drop.-p27 {
+	right: 230px;
+	animation-delay: 1s;
+}
+
+.drop.-p28 {
+	right: 280px;
+	animation-delay: 1.2s;
+}
+
+.drop.-p29 {
+	right: 310px;
+	animation-delay: 0.9s;
+}
+
+.drop.-p30 {
+	right: 450px;
+	animation-delay: 0.5s;
+}
+
+.drop.-p31 {
+	right: 520px;
+	animation-delay: 1.3s;
+}
+
+.drop.-p32 {
+	left: -10px;
+	animation-delay: 0.8s;
+}
+
+.drop.-p33 {
+	left: 150px;
+	animation-delay: 1s;
+}
+
+.drop.-p34 {
+	left: 190px;
+	animation-delay: 1.2s;
+}
+
+.drop.-p35 {
+	left: 260px;
+	animation-delay: 0.9s;
+}
+
+.drop.-p36 {
+	right: 750px;
+	animation-delay: 2.1s;
+}
+
+.drop.-p37 {
+	left: 670px;
+	animation-delay: 1.8s;
+}
+
+.drop.-p38 {
+	left: 90px;
+	animation-delay: 0.9s;
+}
+
+.drop.-p39 {
+	left: 150px;
+	animation-delay: 1.5s;
+}
+
+.drop.-p40 {
+	left: 390px;
+	animation-delay: 2.1s;
+}
+
+@keyframes appear {
+	0% {
+		transform: translate(-100px, 500px);
+	}
+	100% {
+		transform: translate(0px, 0px);
+	}
+}
+
+@keyframes drop {
+	0% {
+		transform: translate(100px, -800px) rotate(30deg);
+	}
+	85% {
+		transform: translate(0px, 0px) scaleX(1) scaleY(1) rotate(20deg);
+	}
+
+	100% {
+		transform: translate(0px, 0px) scaleX(3) scaleY(0) rotate(0deg);
+	}
+}
